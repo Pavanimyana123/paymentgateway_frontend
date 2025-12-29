@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PaymentForm from "./components/PaymentForm";
+import PaymentResult from "./components/PaymentResult";
+import Transactions from './components/Transactions';
+import CompanyProfile from './components/CompanyProfile';
+import "bootstrap/dist/css/bootstrap.min.css";
+import InstructionsPage from "./components/Instructions";
+import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+         <Route path="/" element={<Login />} />
+        <Route path="/payment-form" element={<PaymentForm />} />
+        <Route path="/payment-result" element={<PaymentResult />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/company-profile" element={<CompanyProfile />} />
+        <Route path="/instructions" element={<InstructionsPage />} />
+      </Routes>
+    </Router>
   );
 }
 
