@@ -6,6 +6,8 @@ import CompanyProfile from './components/CompanyProfile';
 import "bootstrap/dist/css/bootstrap.min.css";
 import InstructionsPage from "./components/Instructions";
 import Login from "./components/Login";
+import SplitPayoutButton from "./components/SplitPayoutButton";
+import SplitPayoutHistory from "./components/SplitPayoutHistory";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
         <Route path="/instructions" element={<InstructionsPage />} />
+        <Route path="/splitbutton" element={<SplitPayoutButton />} />
+         <Route path="/splitpayouts" element={<SplitPayoutHistory />} />
       </Routes>
     </Router>
   );

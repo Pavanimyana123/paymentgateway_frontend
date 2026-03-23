@@ -33,7 +33,9 @@ const CustomNavbar = () => {
         { name: 'Company Profile', path: '/company-profile' },
         { name: 'Payment Gateway', path: '/payment-form' },
         { name: 'Transactions', path: '/transactions' },
-        { name: 'Instructions', path: '/instructions' }
+        { name: 'Instructions', path: '/instructions' },
+        { name: 'Split Button', path: '/splitbutton' },
+        { name: 'Split Payouts', path: '/splitpayouts' }
     ];
 
     const isActive = (path) => {

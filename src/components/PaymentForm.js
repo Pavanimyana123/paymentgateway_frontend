@@ -156,6 +156,10 @@ const PaymentForm = () => {
                 }
             );
 
+            console.log("Full PhonePe Response:", response);
+
+            console.log("Response:", response.data);
+
             if (response.data.success) {
                 window.location.href = response.data.checkoutPageUrl;
             } else {
