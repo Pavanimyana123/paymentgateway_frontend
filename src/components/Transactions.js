@@ -501,7 +501,7 @@ const Transactions = () => {
                     <th>Split Payment Status</th>
                     <th>Environment</th>
                     <th>Date</th>
-                    {/* <th className="text-end pe-4">Actions</th> */}
+                    <th className="text-end pe-4">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -565,7 +565,7 @@ const Transactions = () => {
                         <td>
                           {new Date(transaction.created_at).toLocaleString()}
                         </td>
-                        {/* <td className="text-end pe-4">
+                        <td className="text-end pe-4">
                           <div className="d-flex justify-content-end gap-2">
                             <Button
                               variant="outline-primary"
@@ -593,7 +593,7 @@ const Transactions = () => {
                               Delete
                             </Button>
                           </div>
-                        </td> */}
+                        </td>
                       </tr>
                     ))
                   ) : (

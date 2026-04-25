@@ -50,10 +50,7 @@ const SplitPayoutHistory = () => {
               <th>ID</th>
               <th>Reference No</th>
               <th>Sub Account</th>
-              <th>Sub Account2</th>
               <th>Vendor Amount</th>
-              <th>Sub Account1 Amount</th>
-              <th>Sub Account2 Amount</th>
               <th>Merchant Commission</th>
               <th>CC Avenue Fee</th>
               <th>Tax on Fee</th>
@@ -81,10 +78,7 @@ const SplitPayoutHistory = () => {
                   <td>{row.id}</td>
                   <td>{row.reference_number}</td>
                   <td>{row.sub_account_id}</td>
-                  <td>{row.sub_account_id2}</td>
                   <td>₹{row.vendor_payout}</td>
-                  <td>₹{row.sub_account1_amount}</td>
-                  <td>₹{row.sub_account2_amount}</td>
                   <td>₹{row.merchant_commission}</td>
                   <td>₹{row.ccavenue_fee}</td>
                   <td>₹{row.tax_on_transaction}</td>
