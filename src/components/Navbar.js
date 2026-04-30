@@ -33,8 +33,11 @@ const CustomNavbar = () => {
         { name: 'Company Profile', path: '/company-profile' },
         { name: 'Payment Gateway', path: '/payment-form' },
         { name: 'Transactions', path: '/transactions' },
+         { name: 'Customers', path: '/customers' },
+        { name: 'Plans', path: '/plans' },
+         { name: 'Subscription', path: '/subscriptions' },
         { name: 'Instructions', path: '/instructions' },
-        { name: 'Split Button', path: '/splitbutton' },
+        // { name: 'Split Button', path: '/splitbutton' },
         { name: 'Split Payouts', path: '/splitpayouts' }
     ];
 
